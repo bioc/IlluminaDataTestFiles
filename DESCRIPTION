@@ -1,5 +1,5 @@
 Package: IlluminaDataTestFiles
-Version: 0.99.0
+Version: 0.99.1
 Title: Illumina microarray files (IDAT) for testing
 Description: Example data for Illumina microarray output files, for testing purposes
 Author: Kasper Daniel Hansen, Mike L. Smith
