@@ -1,2 +1,3 @@
 inst/extdata/idat
 inst/extdata/gs
+inst/extdata/testData
