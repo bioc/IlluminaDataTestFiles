@@ -1,0 +1,43 @@
+
+R Under development (unstable) (2013-11-04 r64152) -- "Unsuffered Consequences"
+Copyright (C) 2013 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin13.0.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library(illuminaio)
+> library(IlluminaDataTestFiles)
+> 
+> idatFile <- system.file("extdata", "idat", "5723646052_R02C02_Grn.idat", package = "IlluminaDataTestFiles")
+> idat.450k <- illuminaio::readIDAT(idatFile)
+> save(idat.450k, file = "../unitTests/idat.450k.rda", compress = "xz")
+> 
+> idatFile <- system.file("extdata", "idat", "4019585376_B_Red.idat", package = "IlluminaDataTestFiles")
+> idat.370k <- illuminaio::readIDAT(idatFile)
+> save(idat.370k, file = "../unitTests/idat.370k.rda", compress = "xz")
+> 
+> idatFile <- system.file("extdata", "idat", "4343238080_A_Grn.idat", package = "IlluminaDataTestFiles")
+> idat.wg6v2 <- illuminaio::readIDAT(idatFile)
+> save(idat.wg6v2, file = "../unitTests/idat.wg6v2.rda", compress = "xz")
+> 
+> idatFile <- system.file("extdata", "idat", "6016741005_A_Grn.idat", package = "IlluminaDataTestFiles")
+> idat.ht12v4 <- illuminaio::readIDAT(idatFile)
+> save(idat.ht12v4, file = "../unitTests/idat.ht12v4.rda", compress = "xz")
+> 
+> 
+> 
+> proc.time()
+   user  system elapsed 
+ 25.743   0.500  26.971 
